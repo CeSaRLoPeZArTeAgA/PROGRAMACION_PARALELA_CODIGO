@@ -1,0 +1,39 @@
+#pregunta2
+import multiprocessing
+import time
+
+def llenartanque(tanque, lock, resultado, proc_id):
+    while True:
+        with lock:
+            if tanque.value >= 100:
+                # Tanque lleno, salir
+                break
+            tanque.value += 1
+            # Guardamos el id del proceso que llenó el último litro
+            resultado.value = proc_id
+            print(f"Proceso {proc_id} llenó el litro {tanque.value}")
+        # Simular tiempo de llenado
+        time.sleep(0.01)
+
+if __name__ == "__main__":
+    # Variable compartida para la cantidad de litros en el tanque
+    tanque = multiprocessing.Value('i', 0)
+    # Variable compartida para guardar el id del proceso que llenó el último litro
+    resultado = multiprocessing.Value('i', -1)
+    # Lock para sincronizar acceso al tanque
+    lock = multiprocessing.Lock()
+
+    # Número de procesadores disponibles
+    num_procesadores = multiprocessing.cpu_count()
+
+    procesos = []
+    for i in range(num_procesadores):
+        p = multiprocessing.Process(target=llenartanque, args=(tanque, lock, resultado, i))
+        procesos.append(p)
+        p.start()
+
+    for p in procesos:
+        p.join()
+
+    print(f"Tanque lleno con {tanque.value} litros.")
+    print(f"El proceso que llenó el último litro fue: {resultado.value}")
