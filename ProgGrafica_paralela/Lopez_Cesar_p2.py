@@ -205,7 +205,7 @@ def display_info():
         intensidad = 0.2 + 0.8 * abs(math.sin(time.time() * 2))
         glColor3f(intensidad, 0.0, 0.0)  # Rojo parpadeante
         glWindowPos2f(10, 20)
-        for char in "CERRAR VENTANA PARA QUE ARROJE LA ESTADISTICA, OTROS RESULTADOS EN LA SHELL......":
+        for char in "CERRAR VENTANA PARA QUE ARROJE LA ESTADISTICA, OTROS RESULTADOS EN LA SHELL......UNI 2025-2":
             glutBitmapCharacter(GLUT_BITMAP_9_BY_15, ord(char))
         glColor3f(1.0, 1.0, 1.0)  # Restaurar blanco
 
