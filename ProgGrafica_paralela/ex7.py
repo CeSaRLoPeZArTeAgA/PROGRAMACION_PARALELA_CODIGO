@@ -166,7 +166,7 @@ def draw_axes(length=100.0):
 def display_info():
     glColor3f(1.0, 1.0, 1.0)
     
-    info = ["MOVIMIENTO DE ESFERAS USANDO PARALELISMO rev2", ""]
+    info = ["MOVIMIENTO DE ESFERAS USANDO PARALELISMO rev2.2", ""]
     for i, esfera in enumerate(esferas):
         estado = "ACTIVA" if esfera.activa else "REPOSO"
         info.append(f"Esfera {i+1}: Ang={math.degrees(esfera.angulo):.1f}°, Vel={esfera.velocidad_inicial:.1f} m/s - {estado}")
