@@ -1,0 +1,27 @@
+Abstract: 
+Considerando el modelo de aprendizaje basado en una red supervisada, se ha aplicado de acuerdo a la estructura del modelo, paralelizado en cada una de las neuronas, cobriendo una necesidad del cual hace ventajoso respecto al tiempo, costo, eficiencia, etc. para ello se ha asignado en cada neurona un proceso independiente o llamado hilo correspondiente a cada capa oculta. para ello se ha considerado a la cada oculta con n nueronas y aplicado pooling/queue/map/ (el que hallan usado)... , de los cuales en comparación con el modelo clásico se ha obteniendo un 45% de mejora en tiempo, considerando 50 neuronas presentes en la estructura, implicando que este modelo basado en procesamiento paralelo si cubre la ventaja en tiempo, costo, eficiencia.
+
+palabras claves: red neuronal, paralelismo, eficiencia, costo [de 3 a 5]
+
+Introducción : (por lo meno 1 hora de 2 columnas)
+Mencionar casos de problemas que se sucitan a nivel mundial, o en el modelo conicido a nivel mundial.
+por ejemplo de backpropagation donde usan modelo en paralelo, pero lo en proceso computacional en paralelo. asi por ejemplo la red som, etc....>=3
+Modelos de aplicaciones hechas... Escoger >=3 autores, donde han usado IA (RN,y/o VC, y/o Modelo matematico, etc) respecto a paralelismo con IA, y de preferencia con el procesamiento paralelo,
+II. Metodología
+Fuente teoria de:
+pooling/queue/map/event/... o la combinación de ellos, etc...
+
+*Colocar la fórmula y/o las ecuaciones (ejemplo aplicacion con la ecuacion de Amdal), de preferencia usando el editor de ecuaciones del word.
+
+III. Metodología de la estrategia.
+Explicar de que manera se va a usar la estrategia en base a los modelos considerandos en esta investigación. Incluir una grafica referencial del funcionamiento. osea por que se ha usado este criterio para mejorar el tiempo, costo, eficiencia, ...
+
+IV. Resultados:
+Colocar los resultados (en tablas, en gráficos, etc) obtenidos en su investigacion, explicando cada uno de ellos (en tablas, en gráficos, etc), adicionarle casos de incremento. (probar con dimensiones de cantidad de neuronas vs procesadores, ventajas con 2 capas ocultas, etc... ).
+V. Conclusion:
+Es la explicacion de la solución encontrada(se ha obteniendo un 45% de mejora en tiempo, considerando 50 neuronas presentes en la estructura, implicando que este modelo basado en procesamiento paralelo si cubre la ventaja en tiempo, costo, eficiencia,...), <estenderse en el caso de la solución>
+References:
+Debe haber entre minimo 20 y maximo 30
+
+El articulo debe tener entre 8 y 9 páginas, sin conta la pagina de COVER PAGE IN ENGLISH.
+Nota: No estirar las imágenes para llegar a 8.
